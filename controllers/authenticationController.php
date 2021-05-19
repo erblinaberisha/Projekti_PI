@@ -1,6 +1,6 @@
 <?php
-require 'sendEmails.php';
-require 'dbConstants.php'; 
+require_once 'controllers/sendEmails.php';
+require_once 'controllers/constants.php'; 
 
 session_start();
 
@@ -73,7 +73,7 @@ if (isset($_POST['signup-btn'])) {
             $_SESSION['id'] = $user_id;
             $_SESSION['username'] = $username;
             $_SESSION['email'] = $email;
-            $_SESSION['verified'] = false;
+            $_SESSION['verified'] = 0;
             header('location: index.php');
             exit(0); 
         } else {
@@ -133,6 +133,31 @@ unset($_SESSION['email']);
 unset($_SESSION['verify']);
 header("location: login.php");
 
+}
+
+// verify user 
+function verifyUser($token){
+    global $conn; 
+    $sql = "SELECT * FROM users WHERE token='$token' LIMIT 1";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $user = mysqli_fetch_assoc($result);
+        $query = "UPDATE users SET verified=1 WHERE token='$token'";
+
+        if (mysqli_query($conn, $query)) {
+            //log the user in 
+            $_SESSION['id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['verified'] =1;
+            header('location: index.php');
+            exit(0);
+        }
+    }
+     else {
+        echo "User not found!";
+    }
 }
 
 
