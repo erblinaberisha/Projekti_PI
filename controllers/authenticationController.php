@@ -96,12 +96,12 @@ if (isset($_POST['login-btn'])) {
     if (count($errors) === 0) {
         $query = "SELECT * FROM users WHERE username=? OR email=? LIMIT 1";
         $stmt = $conn->prepare($query);
-        $stmt->bind_param('ss', $username, $password);
-       
-        if ($stmt->execute()) {
-            $result=$stmt->get_result();
-            $user = $result->fetch_assoc();
-
+        $stmt->bind_param('ss', $username , $username);
+        $stmt->execute(); 
+        $result=$stmt->get_result();
+        $user = $result->fetch_assoc();
+        if ($user) {
+           
             if (password_verify($password, $user['password'])) { // if password matches
                 $stmt->close();
 
@@ -115,7 +115,7 @@ if (isset($_POST['login-btn'])) {
                 $errors['login_fail'] = "Wrong username or password.";
             }
         } else {
-            $errors['db_error'] = " Login failed!";
+            $errors['db_error'] = "This user doesn't exist. Try again!";
             
         }
     }
@@ -160,8 +160,74 @@ function verifyUser($token){
     }
 }
 
+// if user clicks the forgot password button 
 
+if(isset($_POST['forgot-password'])){
+    $email=$_POST['email']; 
+    if (empty($_POST['email'])) {
+        $errors['email'] = 'Email is required.';
+    }
+    else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors['email_invalid'] = 'Invalid email format.';
+    }
 
+    if(count($errors)==0){
+
+        $sql="SELECT *FROM users WHERE email='$email' LIMIT 1"; 
+        $result=mysqli_query($conn,$sql); 
+        $user=mysqli_fetch_assoc($result); 
+        $token=$user['token'];
+        sendPasswordResetLink($email,$token); 
+        header('location: password_message.php'); 
+        exit(0); 
+    }
+}
+
+// if user click the button to reset the password 
+
+if(isset($_POST['resetPassword-btn'])){
+$password=$_POST['password']; 
+$passwordConf=$_POST['passwordConf']; 
+if (empty($_POST['password'])) {
+    $errors['password'] = 'Password is required.';
+}
+else{
+$number = preg_match('@[0-9]@', $_POST['password']);
+$uppercase = preg_match('@[A-Z]@', $_POST['password']);
+$lowercase = preg_match('@[a-z]@', $_POST['password']);
+$specialChars = preg_match('@[^\w]@', $_POST['password']);
+
+    if(strlen($_POST['password']) < 8 || !$number || !$uppercase || !$lowercase || !$specialChars) {
+        $errors['password_invalid']="Password must be at least 8 characters long and must contain at least one number, one upper case letter, one lower case letter and one special character.";
+    }
+    else if (isset($_POST['password']) && $_POST['password'] !== $_POST['passwordConf']) {
+        $errors['passwordConf'] = 'The two passwords do not match.';
+    }
+}
+
+$password=password_hash($password,PASSWORD_DEFAULT); 
+$email=$_SESSION['email']; 
+if(count($errors)===0){
+    $sql="UPDATE users SET password='$password' WHERE email='$email' "; 
+    $result=mysqli_query($conn,$sql); 
+    if($result){
+        header('location: login.php'); 
+        exit(0); 
+        }
+    }
+}
+
+// reset password 
+function resetPassword($token)
+{
+    global $conn; 
+    $sql="SELECT *FROM users WHERE token='$token' LIMIT 1"; 
+    $result=mysqli_query($conn,$sql); 
+    $user=mysqli_fetch_assoc($result); 
+    $_SESSION['email']=$user['email']; 
+    header('location: reset_password.php'); 
+    exit(0); 
+}
 
 
 
