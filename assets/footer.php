@@ -73,21 +73,21 @@
 <a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
 
 	<!-- ALL JS FILES -->
-	<script src="jquery-3.2.1.min.js"></script>
-	<script src="bootstrap.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
-	<script src="jquery.superslides.min.js"></script>
-	<script src="custom.js"></script>
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/custom.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="contact-form-script.js"></script>
-    <script src="form-validator.min.js"></script>
-	<script src="name.form.js"></script>
-	<script src="images-loded.min.js"></script>
-	<script src="myform_phone.js"></script>
-	<script src="form.address.js"></script>
-	<script src="lastname.form.js"></script>
-	<script src="date.form.js"></script>
-	<script src="time.form.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/form-validator.min.js"></script>
+	<script src="js/name.form.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/myform_phone.js"></script>
+	<script src="js/form.address.js"></script>
+	<script src="js/lastname.form.js"></script>
+	<script src="js/date.form.js"></script>
+	<script src="js/time.form.js"></script>
 	<script>
 		AOS.init();
 	</script>

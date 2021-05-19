@@ -1,7 +1,35 @@
+<?php include 'controllers/authenticationController.php';
+
+// alert popping function  
+function function_alert($message) {
+    // Display the alert box 
+    echo "<script>alert('$message');</script>";
+}
+
+// redirect user to login page if they're not logged in
+if (empty($_SESSION['id'])) {
+    header('location: login.php');
+	exit();
+}
+
+// verify user with token 
+if(isset($_GET['token']))
+{
+	$token=$_GET['token']; 
+	verifyUser($token); 
+}
+
+	if( $_SESSION['verified'] ==0) {
+		//function_alert("Check your email if you want to verify your account now!"); 
+	}
+	else if($_SESSION['verified'] ==1){
+		//function_alert("Your account is verified!"); 
+	}
+?>
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -15,7 +43,7 @@
 	<div id="slides" class="cover-slides">
 		<ul class="slides-container">
 			<li class="text-left">
-				<img src="slider-01.jpg" alt="">
+				<img src="images/slider-01.jpg" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -27,7 +55,7 @@
 				</div>
 			</li>
 			<li class="text-left">
-				<img src="slider-02.jpg" alt="">
+				<img src="images/slider-02.jpg" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -39,7 +67,7 @@
 				</div>
 			</li>
 			<li class="text-left">
-				<img src="slider-03.jpg" alt="">
+				<img src="images/slider-03.jpg" alt="">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -91,7 +119,7 @@
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
-				    <img src="about-img.jpg" alt="" class="img-fluid imgfluid">
+				    <img src="images/about-img.jpg" alt="" class="img-fluid imgfluid">
 		        </div>
 			</div>
 		</div>
@@ -132,7 +160,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12">
-						<img src="menu.jpg" alt="" class="img-fluid imgfluid">
+						<img src="images/menu.jpg" alt="" class="img-fluid imgfluid">
 					</div>
 				</div>
 			</div>
@@ -146,7 +174,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12">
-						<img src="gallery-img-02.jpg" alt="" class="img-fluid imgfluid">
+						<img src="images/gallery-img-02.jpg" alt="" class="img-fluid imgfluid">
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 						<div class="inner-column1">
@@ -179,7 +207,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Blerina Luma</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -188,7 +216,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Tringe Dema</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -196,7 +224,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ard Nika</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
