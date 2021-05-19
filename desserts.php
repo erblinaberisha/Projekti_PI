@@ -1,68 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-    <!-- Site Metas -->
-	 <title>Food House Restaurant| A cozy, nostalgic Kosovo café and wine bar in Kosovo, KS </title>  
-	 <meta name="keywords" content="Wine Bar, West Village brunch, West Village lunch, Vegetables, Cocktails, West Village">
-	 <meta name="description" content="Nostalgic Kosovo café and wine bar in the Balkan with seasonal European-American cuisine, classic cocktails, cozy setting, open every day.">
-	 <meta name="author" content="">
- 
-	 <!-- Site Icons -->
-	 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-
-     <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="css/bootstrap.min.css">    
- <!-- Site CSS -->
- <link rel="stylesheet" href="css/style.css"> 
- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
- <link href="css/baguetteBox.min.css" rel="stylesheet">
- <link href="css/superslides.css" rel="stylesheet">
- <!-- Responsive CSS -->
- <link rel="stylesheet" href="css/responsive.css">
-
-</head>
-
-<body>
+	<link rel="stylesheet" href="bootstrap.min.css">
 	<!-- Start header -->
-	<header class="top-navbar">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbars-rs-food">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-						<li class="nav-item active dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Menu</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="food.html">Food</a>
-								<a class="dropdown-item" href="drinks.html">Drinks</a>
-								<a class="dropdown-item active" href="desserts.html">Desserts</a>
-							</div>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="online_order.html">Online Order</a></li>
-						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
-						<li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
-						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+	<?php
+	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
+		exit('The file was not included correctly in this website. Maybe that file does not exist.');
+	}
+	include('assets/headernav.php');
+	?>
 	<!-- End header -->
 	
 	<!-- Start Desserts -->
@@ -103,7 +49,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-md-6 special-grid desserts">
 								<div class="gallery-single fix">
-									<img src="images/mango.jpg" class="img-fluid" alt="Image">
+									<img src="mango.jpg" class="img-fluid" alt="Image">
                                 <div class="why-text">
                                 <h4>Mango Cheesecake</h4>
                                 <p>Mango and Passion fruit sauce</p>
@@ -113,7 +59,7 @@
 				</div>
                 <div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/banoffeecheesecake.jpg" class="img-fluid" alt="Image">
+                        <img src="banoffeecheesecake.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Banoffee cheesecake</h4>
                             <p>To share</p>
@@ -123,7 +69,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/vegan-cheesecake.jpg" class="img-fluid" alt="Image">
+                        <img src="vegan-cheesecake.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Vegan Cheesecake</h4>
                             <p>With raspberry topping</p>
@@ -133,7 +79,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/Chocolate.jpg" class="img-fluid" alt="Image">
+                        <img src="Chocolate.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate Cheesecake</h4>
                             <p></p>
@@ -143,7 +89,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/lampone.jpg" class="img-fluid" alt="Image">
+                        <img src="lampone.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Lampone Pavlova</h4>
                             <p>With cream and fresh raspberries</p>
@@ -153,7 +99,7 @@
 				</div>
                 <div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/crepes.jpg" class="img-fluid" alt="Image">
+                        <img src="crepes.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Crêpes</h4>
                             <p>With Nutella and fresh fruit</p>
@@ -163,7 +109,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/pancakes.jpg" class="img-fluid" alt="Image">
+                        <img src="pancakes.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Pancakes</h4>
                             <p>With syrup and fresh berries</p>
@@ -173,7 +119,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/waffle.jpg" class="img-fluid" alt="Image">
+                        <img src="waffle.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Pumpkin Spice Waffles</h4>
                             <p>With  maple syrup and some pecans</p>
@@ -183,7 +129,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/coffee-creme-brulee.jpg" class="img-fluid" alt="Image">
+                        <img src="coffee-creme-brulee.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Coffee Crème Brûlée</h4>
                             <p>With dark-roast coffee beans</p>
@@ -193,7 +139,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/tart.jpg" class="img-fluid" alt="Image">
+                        <img src="tart.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate tart</h4>
                             <p></p>
@@ -203,7 +149,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/chocolatefondant.jpg" class="img-fluid" alt="Image">
+                        <img src="chocolatefondant.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate Fondant </h4>
                             <p>with créme fraiche ice cream </p>
@@ -213,7 +159,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/EspresspChocolateTruffles.jpg" class="img-fluid" alt="Image">
+                        <img src="EspresspChocolateTruffles.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate Truffles</h4>
                             <p>With espresso </p>
@@ -223,7 +169,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/petit-fours.jpg" class="img-fluid" alt="Image" >
+                        <img src="petit-fours.jpg" class="img-fluid" alt="Image" >
                         <div class="why-text">
                             <h4>Petit Fours</h4>
                             <p> Gift Box</p>
@@ -233,7 +179,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/lemonmad.jpg" class="img-fluid" alt="Image" >
+                        <img src="lemonmad.jpg" class="img-fluid" alt="Image" >
                         <div class="why-text">
                             <h4>Lemon Madeleines</h4>
                             <p>3 handmade Madeleines</p>
@@ -243,11 +189,11 @@
 				</div>
                 <div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="images/img-07.jpg" class="img-fluid" alt="Image">
+                        <img src="banoffeecheesecake.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
-                            <h4>Special Dinner 1</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
-                            <h5> $25.79</h5>
+                            <h4>Banoffee cheesecake</h4>
+                            <p>To share with love.</p>
+                            <h5> $5.79</h5>
                         </div>
                     </div>
                 </div>
@@ -291,7 +237,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Blerina Luma</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -300,7 +246,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Tringe Dema</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -308,7 +254,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ard Nika</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -335,95 +281,12 @@
 		longitude:<span id="longitude"></span>&deg;
 	</p>-->
 	<!-- Start Contact info -->
-	<div class="contact-imfo-box" >
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 arrow-right">
-					<i class="fa fa-volume-control-phone"></i>
-					<div class="overflow-hidden">
-						<h4>Phone</h4>
-						<address class="lead">
-							+383-49-001-001
-						</address>
-					</div>
-				</div>
-				<div class="col-md-4 arrow-right">
-					<i class="fa fa-envelope"></i>
-					<div class="overflow-hidden">
-						<h4>Email</h4>
-						<address class="lead">
-							Foodhouse113@gmail.com
-						</address>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-map-marker"></i>
-					<div class="overflow-hidden">
-						<h4>Location</h4>
-						<address class="lead">
-							 Prishtina KS
-						</address>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<!-- End Contact info -->
 	
 	<!-- Start Footer -->
-	<footer class="footer-area bg-f" >
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6" style="margin-right: 100px;">
-					<h3>About Us</h3>
-					<p>Since our opening, we have become masters of our craft. We deliver good quality, food with great service and incomparable customer care keep our community coming back again and again.</p>
-
-				</div>
-			
-				<div class="col-lg-3 col-md-6" style="margin-right: 100px;">
-					<h3>Contact information</h3>
-					<address class="lead">Prishtina , 10000</address>
-					<address class="lead">+383-49-001-001</address>
-					<address><a href="mailto:Foodhouse113@gmail.com">Foodhouse113@gmail.com </a></address>
-					<ul class="list-inline f-social">
-						<li class="list-inline-item"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							</ul>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h3>Opening hours</h3>
-					<p><span class="text-color">Mon-Tue :</span> 9AM-11PM</p>
-					<p><span class="text-color">Wed-Thu :</span> 9:AM-11PM</p>
-                    <p><span class="text-color">Fri-Sat :</span> 9:AM-11PM</p>
-                    <p><span class="text-color">Sunday :</span> 5PM-12PM </p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<p class="company-name">All Rights Reserved. &copy;2021 <a href="index.html">Food House Restaurant</a></p>
-					</div>
-				</div>
-             </div>
-		</div>
-		
-	</footer>
+	<?php include('assets/footer.php');?>
 	<!-- End Footer -->
 	
-	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
-
-<!-- ALL JS FILES -->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!-- ALL PLUGINS -->
-<script src="js/jquery.superslides.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-	AOS.init();
-</script>
-<script src="js/colors.js"></script>
 </body>
 </html>
