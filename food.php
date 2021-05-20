@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -57,7 +57,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-md-6 special-grid salads">
 								<div class="gallery-single fix">
-									<img src="green.jfif" class="img-fluid" alt="Image">
+									<img src="images/green.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Green Salad</h4>
 										<p>carrots,tomato,onion,green salad.</p>
@@ -68,7 +68,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid salads">
 								<div class="gallery-single fix">
-									<img src="chicken.jfif" class="img-fluid" alt="Image">
+									<img src="images/chicken.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Chicken Salad</h4>
 										<p>chicken slices,tomato,avocado.</p>
@@ -79,7 +79,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid salads">
 								<div class="gallery-single fix">
-									<img src="caprese.jpg" class="img-fluid" alt="Image">
+									<img src="images/caprese.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Caprese Salad</h4>
 										<p>tomato,mozzarella and basil.</p>
@@ -90,7 +90,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="broccoli.jfif" class="img-fluid" alt="Image">
+									<img src="images/broccoli.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Broccoli Soup</h4>
 										<p>onion,stalk celery,chicken broth,broccoli florets.</p>
@@ -101,7 +101,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="carrot.jfif" class="img-fluid" alt="Image">
+									<img src="images/carrot.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Carrot Soup</h4>
 										<p>carrots,onion,ginger,vegetable broth.</p>
@@ -112,7 +112,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="chickens.jpg" class="img-fluid" alt="Image">
+									<img src="images/chickens.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Chicken Soup</h4>
 										<p>celery,carrots,onions,roasted chicken,oregano.</p>
@@ -123,7 +123,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="cream.jpg" class="img-fluid" alt="Image">
+									<img src="images/cream.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Cream of Mushroom Soup</h4>
 										<p>mushrooms.garlic,herbs,onion,chicken broth</p>
@@ -134,7 +134,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="minestrone.jpg" class="img-fluid" alt="Image">
+									<img src="images/minestrone.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Minestone Soup</h4>
 					                    <p> squash,zucchini,potatoes and green beans,pasta noodles,tomatoes.</p>
@@ -147,7 +147,7 @@
 
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="tomatoes.jpg" class="img-fluid" alt="Image">
+									<img src="images/tomatoes.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Tomatoes Soup</h4>
 										<p>carrots,onion,tomatoes,basil,whipping cream.</p>
@@ -160,7 +160,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast1.jfif" class="img-fluid" alt="Image">
+									<img src="images/breakfast1.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 1</h4>
 										<p>eggs,bacon,croissants,waffles,fresh fruit.</p>
@@ -171,7 +171,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast2.jpg" class="img-fluid" alt="Image">
+									<img src="images/breakfast2.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 2</h4>
 										<p>sausages,egg,toast slices white bread,tomato.</p>
@@ -182,7 +182,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast3.jfif" class="img-fluid" alt="Image">
+									<img src="images/breakfast3.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 3</h4>
 										<p>pancakes with fruit and peanut butter.</p>
@@ -193,7 +193,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast4.jpg" class="img-fluid" alt="Image">
+									<img src="images/breakfast4.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 4</h4>
 										<p>eggs,cheese,fresh chives.</p>
@@ -204,7 +204,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid pizza">
 								<div class="gallery-single fix">
-									<img src="bbq.jfif" class="img-fluid" alt="Image">
+									<img src="images/bbq.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Barbeque Chicken Pizza</h4>
 										<p>bbq sauce,grilled chicken slices,onion,garlic,paprika.</p>
@@ -215,7 +215,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid pizza">
 								<div class="gallery-single fix">
-									<img src="garlic.jfif" class="img-fluid" alt="Image">
+									<img src="images/garlic.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Garlic Chicken Pizza</h4>
 										<p>tomato sauce,chicken slices,garlic,cheese.</p>
@@ -226,7 +226,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid pizza">
 								<div class="gallery-single fix">
-									<img src="house.jfif" class="img-fluid" alt="Image">
+									<img src="images/house.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>House Pizza</h4>
 										<p>tomato sauce,mozzarella cheese,green pepper,mushroom,olives.</p>
@@ -237,7 +237,7 @@
 
 							<div class="col-lg-4 col-md-6 special-grid pizza">
 								<div class="gallery-single fix">
-									<img src="pepperoni.jfif" class="img-fluid" alt="Image">
+									<img src="images/pepperoni.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Pepperoni Pizza</h4>
 										<p>pepperoni,tomato sauce,cheese.</p>
@@ -248,7 +248,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid pizza">
 								<div class="gallery-single fix">
-									<img src="margherita.jfif" class="img-fluid" alt="Image">
+									<img src="images/margherita.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Pizza margherita</h4>
 										<p>tomato sauce,mozzarella cheese,basil leaves.</p>
@@ -259,7 +259,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid pizza">
 								<div class="gallery-single fix">
-									<img src="vg.jpg" class="img-fluid" alt="Image">
+									<img src="images/vg.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Vegetable Pizza</h4>
 										<p>aubergine,courgette flowers,almond,basil,parmesan.</p>
@@ -270,7 +270,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid tradicional food">
 								<div class="gallery-single fix">
-									<img src="byrek.jfif" class="img-fluid" alt="Image">
+									<img src="images/byrek.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Byrek me mish</h4>
 										<p>The best taste.</p>
@@ -281,7 +281,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid tradicional food">
 								<div class="gallery-single fix">
-									<img src="fli.jpg" class="img-fluid" alt="Image">
+									<img src="images/fli.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Fli</h4>
 										<p>The best taste.</p>
@@ -292,7 +292,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid tradicional food">
 								<div class="gallery-single fix">
-									<img src="jahnia.jpg" class="img-fluid" alt="Image">
+									<img src="images/jahnia.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Jahnia</h4>
 										<p>The best taste.</p>
@@ -303,7 +303,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid tradicional food">
 								<div class="gallery-single fix">
-									<img src="pershesh.jpg" class="img-fluid" alt="Image">
+									<img src="images/pershesh.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Përshesh me Pulë</h4>
 										<p>The best taste.</p>
@@ -314,7 +314,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid tradicional food">
 								<div class="gallery-single fix">
-									<img src="pogaqe.jfif" class="img-fluid" alt="Image">
+									<img src="images/pogaqe.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Pogaqe me kos</h4>
 										<p>The best taste.</p>
@@ -325,7 +325,7 @@
 
 							<div class="col-lg-4 col-md-6 special-grid tradicional food">
 								<div class="gallery-single fix">
-									<img src="speca.jpg" class="img-fluid" alt="Image">
+									<img src="images/speca.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Speca të mbushur</h4>
 										<p>The best taste.</p>
@@ -336,7 +336,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid tradicional food">
 								<div class="gallery-single fix">
-									<img src="tav.jpg" class="img-fluid" alt="Image">
+									<img src="images/tav.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Tav Kosi</h4>
 										<p>The best taste.</p>
@@ -347,7 +347,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal1.jpg" class="img-fluid" alt="Image">
+									<img src="images/meal1.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 1</h4>
 										<p>Baked Salmon.</p>
@@ -358,7 +358,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal2.jfif" class="img-fluid" alt="Image">
+									<img src="images/meal2.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 2</h4>
 										<p>Beefsteak.</p>
@@ -369,7 +369,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal3.jpg" class="img-fluid" alt="Image">
+									<img src="images/meal3.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 3</h4>
 										<p> Grilled Chicken.</p>
@@ -380,7 +380,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal4.jpg" class="img-fluid" alt="Image">
+									<img src="images/meal4.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 4</h4>
 										<p>Chicken Fettuccine Alfredo.</p>
@@ -391,7 +391,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal5.jfif" class="img-fluid" alt="Image">
+									<img src="images/meal5.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 5</h4>
 										<p>Hamburger.</p>
@@ -402,7 +402,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal6.jpg" class="img-fluid" alt="Image">
+									<img src="images/meal6.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 6</h4>
 										<p>Lasagna.</p>
@@ -413,7 +413,7 @@
 						
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="rissoto.jfif" class="img-fluid" alt="Image">
+									<img src="images/rissoto.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 7</h4>
 										<p>Rissoto.</p>
@@ -424,7 +424,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal8.jpg" class="img-fluid" alt="Image">
+									<img src="images/meal8.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 8</h4>
 										<p>Rump-Steak.</p>
@@ -435,7 +435,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal9.jpg" class="img-fluid" alt="Image">
+									<img src="images/meal9.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 9</h4>
 										<p>Shrimp Spagheti.</p>
@@ -446,7 +446,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid meal">
 								<div class="gallery-single fix">
-									<img src="meal10.jfif" class="img-fluid" alt="Image">
+									<img src="images/meal10.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Meal 10</h4>
 										<p>Tuna with Potatoes.</p>
@@ -464,7 +464,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-md-6 special-grid salads">
 								<div class="gallery-single fix">
-									<img src="green.jfif" class="img-fluid" alt="Image">
+									<img src="images/green.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Green Salad</h4>
 										<p>carrots,tomato,onion,green salad.</p>
@@ -475,7 +475,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid salads">
 								<div class="gallery-single fix">
-									<img src="chicken.jfif" class="img-fluid" alt="Image">
+									<img src="images/chicken.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Chicken Salad</h4>
 										<p>chicken slices,tomato,avocado.</p>
@@ -486,7 +486,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid salads">
 								<div class="gallery-single fix">
-									<img src="caprese.jpg" class="img-fluid" alt="Image">
+									<img src="images/caprese.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Caprese Salad</h4>
 										<p>tomato,mozzarella and basil.</p>
@@ -505,7 +505,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="broccoli.jfif" class="img-fluid" alt="Image">
+									<img src="images/broccoli.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Broccoli Soup</h4>
 										<p>onion,stalk celery,chicken broth,broccoli florets.</p>
@@ -516,7 +516,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="carrot.jfif" class="img-fluid" alt="Image">
+									<img src="images/carrot.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Carrot Soup</h4>
 										<p>carrots,onion,ginger,vegetable broth.</p>
@@ -527,7 +527,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="chickens.jpg" class="img-fluid" alt="Image">
+									<img src="images/chickens.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Chicken Soup</h4>
 										<p>celery,carrots,onions,roasted chicken,oregano.</p>
@@ -538,7 +538,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="cream.jpg" class="img-fluid" alt="Image">
+									<img src="images/cream.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Cream of Mushroom Soup</h4>
 										<p>mushrooms.garlic,herbs,onion,chicken broth</p>
@@ -549,7 +549,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="minestrone.jpg" class="img-fluid" alt="Image">
+									<img src="images/minestrone.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Minestone Soup</h4>
 					                    <p> squash,zucchini,potatoes and green beans,pasta noodles,tomatoes.</p>
@@ -560,7 +560,7 @@
 
 							<div class="col-lg-4 col-md-6 special-grid soups">
 								<div class="gallery-single fix">
-									<img src="tomatoes.jpg" class="img-fluid" alt="Image">
+									<img src="images/tomatoes.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Tomatoes Soup</h4>
 										<p>carrots,onion,tomatoes,basil,whipping cream.</p>
@@ -578,7 +578,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast1.jfif" class="img-fluid" alt="Image">
+									<img src="images/breakfast1.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 1</h4>
 										<p>eggs,bacon,croissants,waffles,fresh fruit.</p>
@@ -589,7 +589,7 @@
 						
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast2.jpg" class="img-fluid" alt="Image">
+									<img src="images/breakfast2.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 2</h4>
 										<p>sausages,egg,toast slices white bread,tomato.</p>
@@ -600,7 +600,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast3.jfif" class="img-fluid" alt="Image">
+									<img src="images/breakfast3.jfif" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 3</h4>
 										<p>pancakes with fruit and peanut butter.</p>
@@ -611,7 +611,7 @@
 							
 							<div class="col-lg-4 col-md-6 special-grid breakfast">
 								<div class="gallery-single fix">
-									<img src="breakfast4.jpg" class="img-fluid" alt="Image">
+									<img src="images/breakfast4.jpg" class="img-fluid" alt="Image">
 									<div class="why-text">
 										<h4>Breakfast 4</h4>
 										<p>eggs,cheese,fresh chives.</p>
@@ -629,7 +629,7 @@
 							<div class="row">
 						<div class="col-lg-4 col-md-6 special-grid pizza">
 							<div class="gallery-single fix">
-								<img src="bbq.jfif" class="img-fluid" alt="Image">
+								<img src="images/bbq.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Barbeque Chicken Pizza</h4>
 									<p>bbq sauce,grilled chicken slices,onion,garlic,paprika.</p>
@@ -640,7 +640,7 @@
 
 					      <div class="col-lg-4 col-md-6 special-grid pizza">
 							<div class="gallery-single fix">
-								<img src="garlic.jfif" class="img-fluid" alt="Image">
+								<img src="images/garlic.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Garlic Chicken Pizza</h4>
 									<p>tomato sauce,chicken slices,garlic,cheese.</p>
@@ -651,7 +651,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid pizza">
 							<div class="gallery-single fix">
-								<img src="house.jfif" class="img-fluid" alt="Image">
+								<img src="images/house.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>House Pizza</h4>
 									<p>tomato sauce,mozzarella cheese,green pepper,mushroom,olives.</p>
@@ -662,7 +662,7 @@
 
 						<div class="col-lg-4 col-md-6 special-grid pizza">
 							<div class="gallery-single fix">
-								<img src="pepperoni.jfif" class="img-fluid" alt="Image">
+								<img src="images/pepperoni.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Pepperoni Pizza</h4>
 									<p>pepperoni,tomato sauce,cheese.</p>
@@ -673,7 +673,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid pizza">
 							<div class="gallery-single fix">
-								<img src="margherita.jfif" class="img-fluid" alt="Image">
+								<img src="images/margherita.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Pizza margherita</h4>
 									<p>tomato sauce,mozzarella cheese,basil leaves.</p>
@@ -684,7 +684,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid pizza">
 							<div class="gallery-single fix">
-								<img src="vg.jpg" class="img-fluid" alt="Image">
+								<img src="images/vg.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Vegetable Pizza</h4>
 									<p>aubergine,courgette flowers,almond,basil,parmesan.</p>
@@ -703,7 +703,7 @@
 							<div class="row">
 						<div class="col-lg-4 col-md-6 special-grid tradicional food">
 							<div class="gallery-single fix">
-								<img src="byrek.jfif" class="img-fluid" alt="Image">
+								<img src="images/byrek.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Byrek me mish</h4>
 									<p>The best taste.</p>
@@ -714,7 +714,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid tradicional food">
 							<div class="gallery-single fix">
-								<img src="fli.jpg" class="img-fluid" alt="Image">
+								<img src="images/fli.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Fli</h4>
 									<p>The best taste.</p>
@@ -725,7 +725,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid tradicional food">
 							<div class="gallery-single fix">
-								<img src="jahnia.jpg" class="img-fluid" alt="Image">
+								<img src="images/jahnia.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Jahnia</h4>
 									<p>The best taste.</p>
@@ -736,7 +736,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid tradicional food">
 							<div class="gallery-single fix">
-								<img src="pershesh.jpg" class="img-fluid" alt="Image">
+								<img src="images/pershesh.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Përshesh me Pulë</h4>
 									<p>The best taste.</p>
@@ -747,7 +747,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid tradicional food">
 							<div class="gallery-single fix">
-								<img src="pogaqe.jfif" class="img-fluid" alt="Image">
+								<img src="images/pogaqe.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Pogaqe me kos</h4>
 									<p>The best taste.</p>
@@ -758,7 +758,7 @@
 
 						<div class="col-lg-4 col-md-6 special-grid tradicional food">
 							<div class="gallery-single fix">
-								<img src="speca.jpg" class="img-fluid" alt="Image">
+								<img src="images/speca.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Speca të mbushur</h4>
 									<p>The best taste.</p>
@@ -769,7 +769,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid tradicional food">
 							<div class="gallery-single fix">
-								<img src="tav.jpg" class="img-fluid" alt="Image">
+								<img src="images/tav.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Tav Kosi</h4>
 									<p>The best taste.</p>
@@ -788,7 +788,7 @@
 							<div class="row">
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal1.jpg" class="img-fluid" alt="Image">
+								<img src="images/meal1.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 1</h4>
 									<p>Baked Salmon.</p>
@@ -799,7 +799,7 @@
 					
                           <div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal2.jfif" class="img-fluid" alt="Image">
+								<img src="images/meal2.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 2</h4>
 									<p>Beefsteak.</p>
@@ -810,7 +810,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal3.jpg" class="img-fluid" alt="Image">
+								<img src="images/meal3.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 3</h4>
 									<p> Grilled Chicken.</p>
@@ -821,7 +821,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal4.jpg" class="img-fluid" alt="Image">
+								<img src="images/meal4.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 4</h4>
 									<p>Chicken Fettuccine Alfredo.</p>
@@ -832,7 +832,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal5.jfif" class="img-fluid" alt="Image">
+								<img src="images/meal5.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 5</h4>
 									<p>Hamburger.</p>
@@ -843,7 +843,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal6.jpg" class="img-fluid" alt="Image">
+								<img src="images/meal6.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 6</h4>
 									<p>Lasagna.</p>
@@ -854,7 +854,7 @@
 					
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal7.jpg" class="img-fluid" alt="Image">
+								<img src="images/meal7.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 7</h4>
 									<p>Rissoto.</p>
@@ -865,7 +865,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal8.jpg" class="img-fluid" alt="Image">
+								<img src="images/meal8.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 8</h4>
 									<p>Rump-Steak.</p>
@@ -876,7 +876,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal9.jpg" class="img-fluid" alt="Image">
+								<img src="images/meal9.jpg" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 9</h4>
 									<p>Shrimp Spagheti.</p>
@@ -887,7 +887,7 @@
 						
 						<div class="col-lg-4 col-md-6 special-grid meal">
 							<div class="gallery-single fix">
-								<img src="meal10.jfif" class="img-fluid" alt="Image">
+								<img src="images/meal10.jfif" class="img-fluid" alt="Image">
 								<div class="why-text">
 									<h4>Meal 10</h4>
 									<p>Tuna with Potatoes.</p>
@@ -941,7 +941,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Blerina Luma</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -950,7 +950,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Tringe Dema</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -958,7 +958,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ard Nika</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
