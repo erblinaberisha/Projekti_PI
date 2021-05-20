@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -38,7 +38,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="staff-img-01.jpg">
+                            <img src="images/staff-img-01.jpg">
                             <ul class="social">
                                 <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg" class="fa fa-instagram"></a></li>
                             </ul>
@@ -53,7 +53,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="staff-img-02.jpg">
+                            <img src="images/staff-img-02.jpg">
                             <ul class="social">
                                 <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg" class="fa fa-instagram"></a></li>
                             </ul>
@@ -68,7 +68,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="staff-img-03.jpg">
+                            <img src="images/staff-img-03.jpg">
                             <ul class="social">
                                 <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg" class="fa fa-instagram"></a></li>
                             </ul>
@@ -83,7 +83,7 @@
 				<div class="col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="staff-img-04.jpg">
+                            <img src="images/staff-img-04.jpg">
                             <ul class="social">
                                 <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg" class="fa fa-instagram"></a></li>
                             </ul>
@@ -98,7 +98,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="staff-img-05.jpg">
+                            <img src="images/staff-img-05.jpg">
                             <ul class="social">
                                 <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg" class="fa fa-instagram"></a></li>
                             </ul>
@@ -113,7 +113,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="staff-img-06.jpg">
+                            <img src="images/staff-img-06.jpg">
                             <ul class="social">
                                 <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Ffood.house2021%2F%3Ffbclid%3DIwAR0wkBllp5izksEj4fPQYR-xV0qo8wrGH3ENQ2FiW6tAGugikeXNBio7IYo&h=AT3APLLmE7NeOzpKFRYyPHxnkGCxeJ63YQu144Mpcfc3srPpmnF3iKg43a0VqtqX7j6HtG5OULuSZcRWyYXLFs6DkiFesE-qQkfv7_HjxkmPT_TTT-0hEUalSR8GPW7nXZn-5LJwVGg" class="fa fa-instagram"></a></li>
                             </ul>
@@ -146,7 +146,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Blerina Luma</strong></h5>
 								<h6 class="text-dark m-0">Happy Costumer</h6>
@@ -155,7 +155,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Tringe Dema</strong></h5>
 								<h6 class="text-dark m-0">Our Costumer</h6>
@@ -163,7 +163,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ard Nika</strong></h5>
 								<h6 class="text-dark m-0">Our Costumer</h6>
