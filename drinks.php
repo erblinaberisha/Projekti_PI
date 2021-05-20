@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-    <link rel="stylesheet" href="drinksbootstrap.min.css">
+    <link rel="stylesheet" href="css/drinksbootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -49,7 +49,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks" style="vertical-align:middle; margin-left: -185px">
 						<div class="gallery-single fix">
-							<img src="drink1.jpg" class="img-fluid" alt="Image" ;>
+							<img src="images/drink1.jpg" class="img-fluid" alt="Image" ;>
 							<div class="why-text">
 								<h4>Cola's</h4>
 								<p>Coke, Coke Light and Zero</p>
@@ -61,7 +61,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink2.jpg" class="img-fluid" alt="Image">
+							<img src="images/drink2.jpg" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Other Soft Drinks</h4>
 								<p>Fanta, Lemonade, Tonic and Soda</p>
@@ -72,7 +72,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink3.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink3.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Fruit Juice</h4>
 								<p>Cranberry, Strawberry, Apple, Pomegranate, Orange</p>
@@ -83,7 +83,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink4.jpg" class="img-fluid" alt="Image">
+							<img src="images/drink4.jpg" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Mineral Water</h4>
 								<p>Still or Sparkling</p>
@@ -109,7 +109,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks" style="vertical-align:middle; margin-left: 180px">
 						<div class="gallery-single fix">
-							<img src="drink5.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink5.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Beers</h4>
 								<p>Castle, Black Label, Amstel, Windhoek Light and Windhoek Lager</p>
@@ -120,7 +120,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks" style="padding: 30px">
 						<div class="gallery-single fix">
-							<img src="drink6.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink6.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Ciders</h4>
 								<p>Savannah</p>
@@ -144,7 +144,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks" style="vertical-align:middle; margin-left: -185px">
 						<div class="gallery-single fix">
-							<img src="drink7.JPG" class="img-fluid" alt="Image" ;>
+							<img src="images/drink7.JPG" class="img-fluid" alt="Image" ;>
 							<div class="why-text">
 								<h4>Whiskey</h4>
 								<p>J&amp;B and Bells</p>
@@ -155,7 +155,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink8.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink8.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Brandy</h4>
 								<p>Klipdrift and Wellington</p>
@@ -166,7 +166,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink9.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink9.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>White spirits</h4>
 								<p>Gin and Vodka</p>
@@ -177,7 +177,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink10.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink10.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Rum</h4>
 								<p>Southern Comfort, Campari</p>
@@ -202,7 +202,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink11.JPG" class="img-fluid" alt="Image" ;>
+							<img src="images/drink11.JPG" class="img-fluid" alt="Image" ;>
 							<div class="why-text">
 								<h4>White Wine</h4>
 								<p>
@@ -215,7 +215,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink12.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink12.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Red Wine</h4>
 								<p>
@@ -228,7 +228,7 @@
 
 					<div class="col-lg-4 col-md-6 special-grid drinks">
 						<div class="gallery-single fix">
-							<img src="drink13.JPG" class="img-fluid" alt="Image">
+							<img src="images/drink13.JPG" class="img-fluid" alt="Image">
 							<div class="why-text">
 								<h4>Rose Wine</h4>
 								<p>
@@ -278,7 +278,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Blerina Luma</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -287,7 +287,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Tringe Dema</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -295,7 +295,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ard Nika</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
