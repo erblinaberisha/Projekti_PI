@@ -2,12 +2,13 @@
 require_once 'controllers/sendEmails.php';
 require_once 'controllers/constants.php'; 
 
+// Start the session 
 session_start();
 
 $username = "";
 $email = "";
 $errors = [];
-
+// Connecting to database 
 $conn = new mysqli(DBHOST, DBUSER, DBPASS,DBNAME);
 
 if ($conn->connect_error) {
@@ -15,7 +16,7 @@ if ($conn->connect_error) {
   }
   
 
-// SIGN UP USER
+// Sign up the user if sign up form in submited 
 if (isset($_POST['signup-btn'])) {
     if (empty($_POST['username'])) {
         $errors['username'] = 'Username is required.';
@@ -45,10 +46,10 @@ if (isset($_POST['signup-btn'])) {
         }
     }
     
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $token = bin2hex(random_bytes(50)); // generate unique token
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); //encrypt password
+    $username =$conn->real_escape_string($_POST['username']);
+    $email =$conn->real_escape_string( $_POST['email']);
+    $token = bin2hex(random_bytes(50)); // Generate unique token
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Password hashing
 
     // Check if email already exists
     $sql = "SELECT * FROM users WHERE email='$email' LIMIT 1";
@@ -67,7 +68,7 @@ if (isset($_POST['signup-btn'])) {
             $user_id = $stmt->insert_id;
             $stmt->close();
 
-            // send verification email to user
+            // Send verification email to user via this function 
              sendVerificationEmail($email, $token);
 
             $_SESSION['id'] = $user_id;
@@ -91,7 +92,7 @@ if (isset($_POST['login-btn'])) {
         $errors['password'] = 'Password required.';
     }
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password=$_POST['password'];
 
     if (count($errors) === 0) {
         $query = "SELECT * FROM users WHERE username=? OR email=? LIMIT 1";
@@ -102,7 +103,7 @@ if (isset($_POST['login-btn'])) {
         $user = $result->fetch_assoc();
         if ($user) {
            
-            if (password_verify($password, $user['password'])) { // if password matches
+            if (password_verify($password, $user['password'])) { // Check if password matches
                 $stmt->close();
 
                 $_SESSION['id'] = $user['id'];
@@ -111,18 +112,19 @@ if (isset($_POST['login-btn'])) {
                 $_SESSION['verified'] = $user['verified'];
                 header('location: index.php');
                 exit(0);
-            } else { // if password does not match
+
+            } else { // If password does not match login is failed 
                 $errors['login_fail'] = "Wrong username or password.";
             }
         } else {
-            $errors['db_error'] = "This user doesn't exist. Try again!";
+            $errors['db_error'] = "User with this email or username doesn't exist. Try again!";
             
         }
     }
 }
 
 
-//logout 
+// If user clicks the logout link in navbar we destroy the session and rederict user to login page 
 
 if(isset($_GET['logout'])){
    
@@ -135,7 +137,7 @@ header("location: login.php");
 
 }
 
-// verify user 
+// Verify user with token 
 function verifyUser($token){
     global $conn; 
     $sql = "SELECT * FROM users WHERE token='$token' LIMIT 1";
@@ -146,7 +148,7 @@ function verifyUser($token){
         $query = "UPDATE users SET verified=1 WHERE token='$token'";
 
         if (mysqli_query($conn, $query)) {
-            //log the user in 
+            // Log the user in 
             $_SESSION['id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['email'] = $user['email'];
@@ -160,34 +162,40 @@ function verifyUser($token){
     }
 }
 
-// if user clicks the forgot password button 
+// If user clicks the forgot password button we send an email with reset password link  
 
 if(isset($_POST['forgot-password'])){
-    $email=$_POST['email']; 
+    $email=$conn -> real_escape_string($_POST['email']); 
     if (empty($_POST['email'])) {
         $errors['email'] = 'Email is required.';
     }
     else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
         $errors['email_invalid'] = 'Invalid email format.';
     }
+    
 
     if(count($errors)==0){
 
         $sql="SELECT *FROM users WHERE email='$email' LIMIT 1"; 
         $result=mysqli_query($conn,$sql); 
         $user=mysqli_fetch_assoc($result); 
+        if($user['verified']==0)
+        {
+            $errors['email_verification']='We\'re so sorry! We can\'t send you reset password link on this email because you haven\'t verified your email when u first signed up';
+        }
+        else{
         $token=$user['token'];
         sendPasswordResetLink($email,$token); 
         header('location: password_message.php'); 
-        exit(0); 
+        exit(0); }
     }
 }
 
-// if user click the button to reset the password 
+// If user click the button to reset the password after he clicked the link on email  
 
 if(isset($_POST['resetPassword-btn'])){
-$password=$_POST['password']; 
-$passwordConf=$_POST['passwordConf']; 
+$password=$conn -> real_escape_string($_POST['password']); 
+$passwordConf=$conn -> real_escape_string($_POST['passwordConf']); 
 if (empty($_POST['password'])) {
     $errors['password'] = 'Password is required.';
 }
@@ -217,7 +225,7 @@ if(count($errors)===0){
     }
 }
 
-// reset password 
+// Reset password 
 function resetPassword($token)
 {
     global $conn; 

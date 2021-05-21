@@ -31,7 +31,7 @@
 <header class="top-navbar">  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <img src="images/logo.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,6 @@
                             <a class="dropdown-item" href="desserts.php">Desserts</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="online_order.php">Online Order</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="reservation.php">Reservation</a></li>
                     <li class="nav-item"><a class="nav-link" href="staff.php">Staff</a></li>

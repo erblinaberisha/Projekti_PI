@@ -11,7 +11,7 @@ $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
 // Create the Mailer using created Transport
 $mailer = new Swift_Mailer($transport);
 
-// send verification email 
+// Send verification email 
 
 function sendVerificationEmail($userEmail, $token)
 {
@@ -46,7 +46,7 @@ function sendVerificationEmail($userEmail, $token)
     </body>
 
     </html>';
-
+try{
     // Create a message
     $message = (new Swift_Message('Verify your email'))
         ->setFrom(EMAIL)
@@ -54,11 +54,14 @@ function sendVerificationEmail($userEmail, $token)
         ->setBody($body, 'text/html');
 
     // Send the message
-    $result = $mailer->send($message);
+    $result = $mailer->send($message); }
+ 
+    catch(Exception $e) {
+      echo 'Sorry! We could\'nt send the message.';}
 }
 
 
-// send password reset link 
+// Send password reset link 
 
 function sendPasswordResetLink($userEmail,$token)
 {
@@ -94,6 +97,7 @@ function sendPasswordResetLink($userEmail,$token)
 
   </html>';
 
+  try{
   // Create a message
   $message = (new Swift_Message('Reset your password!'))
       ->setFrom(EMAIL)
@@ -101,6 +105,9 @@ function sendPasswordResetLink($userEmail,$token)
       ->setBody($body, 'text/html');
 
   // Send the message
-  $result = $mailer->send($message);
+  $result = $mailer->send($message); }
+
+  catch(Exception $e) {
+    echo 'Sorry! We could\'nt send the message.';}
 
 }

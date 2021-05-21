@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
-						<form id="reservationForm">
+						<form id="reservationForm" action="controllers/reservation_formController.php" method="post">
 							<div class="row">
 								<div class="col-md-6">
 									<h3>Book a table</h3>
@@ -57,7 +57,7 @@
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<select class="custom-select d-block form-control" id="person" required data-error="Please select Person">
+											<select class="custom-select d-block form-control" id="person" name="people" required data-error="Please select Person">
 											  <option disabled selected>Number of People</option>
 											  <option value="1 person">1 person</option>
 											  <option value="2 people">2 people</option>
@@ -98,7 +98,7 @@
 								</div>
 								<div class="col-md-12">
 									<div class="submit-button text-center">
-										<button class="btn btn-common" id="submit1" type="submit">Book Table</button>
+										<button class="btn btn-common" id="submit1" name="submit" type="submit">Book Table</button>
 										<div id="msgSubmit" class="h3 text-center hidden"></div> 
 										<div class="clearfix"></div> 
 									</div>
@@ -160,7 +160,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Blerina Luma</strong></h5>
 								<h6 class="text-dark m-0">Happy Costumer</h6>
@@ -169,7 +169,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Tringe Dema</strong></h5>
 								<h6 class="text-dark m-0">Our Costumer</h6>
@@ -177,7 +177,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ard Nika</strong></h5>
 								<h6 class="text-dark m-0">Our Costumer</h6>
@@ -207,6 +207,6 @@
 <!-- Start Footer -->
     <?php include('assets/footer.php');?>
 <!-- End Footer -->
-<script src="colors.js"></script>
+<script src="js/colors.js"></script>
 </body>
 </html>

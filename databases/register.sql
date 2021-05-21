@@ -1,4 +1,5 @@
 CREATE DATABASE register; 
+USE register;
 
 CREATE TABLE users(
 id int NOT NULL AUTO_INCREMENT,
