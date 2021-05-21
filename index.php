@@ -12,10 +12,10 @@ if(isset($_GET['token'])){
 	verifyUser($token); 
 }
 if( $_SESSION['verified'] ==0) {
-	//function_alert("Check your email if you want to verify your account now!"); 
+	function_alert("Check your email if you want to verify your account now!"); 
 }
 else if($_SESSION['verified'] ==1){
-	//function_alert("Your account is verified!"); 
+	//function_alert("Your account with the email you entered is verified!"); 
 }
 
    // verify user with token 
