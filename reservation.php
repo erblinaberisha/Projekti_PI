@@ -44,20 +44,20 @@
 									<div class="col-md-12">
 										<div class="form-group">
 											<label for="form_date">Date</label>
-											<input id="form_date" class="picker__input form-control" name="date" type="date" placeholder="dd/mm/yyyy" required="required" data-error="Please select date">
-											<div class="help-block with-errors"></div>
+											<input type="date" class="form-control" value="<?php echo $date ?> " name="date"/>
+											<span style="color: red;"><?php echo $date_error ?></span>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
 											<label for="form_time">Time </label>
-											<input id="form_time" class="form-control picker__input" name="time" type="time" placeholder="--:--" required ="required" data-error="Please select time">
-											<div class="help-block with-errors"></div>
+											<input id="form_time" class="form-control picker__input" name="time" type="time" >
+											<span  style="color: red;"><?php echo $time_error ?></span>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<select class="custom-select d-block form-control" id="person" name="people" required data-error="Please select Person">
+										<select class="custom-select d-block form-control" id="person" name="people">
 											  <option disabled selected>Number of People</option>
 											  <option value="1 person">1 person</option>
 											  <option value="2 people">2 people</option>
@@ -68,7 +68,7 @@
 											  <option value="7 people">7 people</option>
 											  <option value="8+ people">8+ people</option>
 											</select>
-											<div class="help-block with-errors"></div>
+											<span  style="color: red;"><?php echo $person_error ?></span>
 										</div> 
 									</div>
 								</div>
@@ -77,22 +77,22 @@
 									<div class="col-md-12">
 										<div class="form-group">
 											<label for="form_name">Name </label>
-											<input type="name" class="form-control" id="form_name" name="name" pattern= "^[A-Za-z]+$" placeholder="Your Name" required="required" data-error="Invalid name is required.Please input alphabet characters only">
-											<div class="help-block with-errors"></div>
+											<input type="text" placeholder="Your name" id="form_name" class="form-control" name="name" value="<?php echo $name1?>">
+											<span  style="color: red;"><?php echo $name1_error ?></span>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
 											<label for="form_email">Email </label>
-											<input type="email" placeholder="Your Email" id="form_email" class="form-control" name="email" required="required" data-error="Invalid email is required.">
-											<div class="help-block with-errors"></div>
+											<input type="text" placeholder="Your Email" id="form_email" class="form-control" name="email" value="<?php echo $email?>">
+											<span style="color: red;"><?php echo $email_error ?></span>
 										</div> 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
 											<label for="myform_phone">Phone:</label>
-											<input type="tel" placeholder="Your Number" id="myform_phone" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" name="phone" required="required" data-error="Invalid phone number is required.Enter phone number in this format: 123-456-789" >
-											<div class="help-block with-errors"></div>
+											<input type="text" placeholder="Your Number" id="myform_phone" class="form-control" name="phone" value="<?php echo $phone?>">
+											<span style="color: red;"><?php echo $phone_error ?></span>
 										</div> 
 									</div>
 								</div>
