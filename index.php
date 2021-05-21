@@ -35,11 +35,14 @@ if(isset($_GET['token'])){
 	verifyUser($token); 
 }
 if( $_SESSION['verified'] ==0) {
+	$email=$_SESSION['email'];
 	$name=$_SESSION['username']; 
+	$message=["Hi,",$name,".Check","your","email",$email,"if","you","want","to","verify","your","account","now!"]; 
+	$messageImplode=implode(" ",$message);
+	
 	$username=new logedinUser($name); 
 	$getName=$username->get_user(); 
-
-	$username->displayAlert("Hi, $getName. Check your email if you want to verify your account now!"); 
+	$username->displayAlert($messageImplode); 
 }
 
 

@@ -181,7 +181,7 @@ if(isset($_POST['forgot-password'])){
         $user=mysqli_fetch_assoc($result); 
         if($user['verified']==0)
         {
-            $errors['email_verification']='We\'re so sorry! We can\'t send you reset password link on this email because you haven\'t verified your email when u first signed up';
+            $errors['email_verification']='We\'re so sorry! We can\'t send you reset password link on this email because you haven\'t verified your email when u first signed up.';
         }
         else{
         $token=$user['token'];
