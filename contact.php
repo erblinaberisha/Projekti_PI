@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	<!-- Start Footer -->
 	<?php include('assets/footer.php');?>
 <!-- End Footer -->
-<script src="colors.js"></script>
+<script src="js/colors.js"></script>
 
 </body>
 </html>

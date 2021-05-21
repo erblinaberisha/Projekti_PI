@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -49,7 +49,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-md-6 special-grid desserts">
 								<div class="gallery-single fix">
-									<img src="mango.jpg" class="img-fluid" alt="Image">
+									<img src="images/mango.jpg" class="img-fluid" alt="Image">
                                 <div class="why-text">
                                 <h4>Mango Cheesecake</h4>
                                 <p>Mango and Passion fruit sauce</p>
@@ -59,7 +59,7 @@
 				</div>
                 <div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="banoffeecheesecake.jpg" class="img-fluid" alt="Image">
+                        <img src="images/banoffeecheesecake.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Banoffee cheesecake</h4>
                             <p>To share</p>
@@ -69,7 +69,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="vegan-cheesecake.jpg" class="img-fluid" alt="Image">
+                        <img src="images/vegan-cheesecake.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Vegan Cheesecake</h4>
                             <p>With raspberry topping</p>
@@ -79,7 +79,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="Chocolate.jpg" class="img-fluid" alt="Image">
+                        <img src="images/Chocolate.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate Cheesecake</h4>
                             <p></p>
@@ -89,7 +89,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="lampone.jpg" class="img-fluid" alt="Image">
+                        <img src="images/lampone.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Lampone Pavlova</h4>
                             <p>With cream and fresh raspberries</p>
@@ -99,7 +99,7 @@
 				</div>
                 <div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="crepes.jpg" class="img-fluid" alt="Image">
+                        <img src="images/crepes.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Crêpes</h4>
                             <p>With Nutella and fresh fruit</p>
@@ -109,7 +109,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="pancakes.jpg" class="img-fluid" alt="Image">
+                        <img src="images/pancakes.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Pancakes</h4>
                             <p>With syrup and fresh berries</p>
@@ -119,7 +119,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="waffle.jpg" class="img-fluid" alt="Image">
+                        <img src="images/waffle.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Pumpkin Spice Waffles</h4>
                             <p>With  maple syrup and some pecans</p>
@@ -129,7 +129,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="coffee-creme-brulee.jpg" class="img-fluid" alt="Image">
+                        <img src="images/coffee-creme-brulee.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Coffee Crème Brûlée</h4>
                             <p>With dark-roast coffee beans</p>
@@ -139,7 +139,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="tart.jpg" class="img-fluid" alt="Image">
+                        <img src="images/tart.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate tart</h4>
                             <p></p>
@@ -149,7 +149,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="chocolatefondant.jpg" class="img-fluid" alt="Image">
+                        <img src="images/chocolatefondant.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate Fondant </h4>
                             <p>with créme fraiche ice cream </p>
@@ -159,7 +159,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="EspresspChocolateTruffles.jpg" class="img-fluid" alt="Image">
+                        <img src="images/EspresspChocolateTruffles.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Chocolate Truffles</h4>
                             <p>With espresso </p>
@@ -169,7 +169,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="petit-fours.jpg" class="img-fluid" alt="Image" >
+                        <img src="images/petit-fours.jpg" class="img-fluid" alt="Image" >
                         <div class="why-text">
                             <h4>Petit Fours</h4>
                             <p> Gift Box</p>
@@ -179,7 +179,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="lemonmad.jpg" class="img-fluid" alt="Image" >
+                        <img src="images/lemonmad.jpg" class="img-fluid" alt="Image" >
                         <div class="why-text">
                             <h4>Lemon Madeleines</h4>
                             <p>3 handmade Madeleines</p>
@@ -189,7 +189,7 @@
 				</div>
                 <div class="col-lg-4 col-md-6 special-grid desserts">
                     <div class="gallery-single fix">
-                        <img src="banoffeecheesecake.jpg" class="img-fluid" alt="Image">
+                        <img src="images/banoffeecheesecake.jpg" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>Banoffee cheesecake</h4>
                             <p>To share with love.</p>
@@ -237,7 +237,7 @@
 						<div class="carousel-inner mt-4">
 							<div class="carousel-item text-center active">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Blerina Luma</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -246,7 +246,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Tringe Dema</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>
@@ -254,7 +254,7 @@
 							</div>
 							<div class="carousel-item text-center">
 								<div class="img-box p-1 border rounded-circle m-auto">
-									<img class="d-block w-100 rounded-circle" src="quotations-button.png" alt="">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
 								</div>
 								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ard Nika</strong></h5>
 								<h6 class="text-dark m-0">Happy Customer</h6>

@@ -1,20 +1,16 @@
-
-	<meta charset="utf-8">
+<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	  
     <!-- Mobile Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
      <!-- Site Metas -->
     <title>Food House Restaurant| A cozy, nostalgic Kosovo café and wine bar in Kosovo, KS </title>  
     <meta name="keywords" content="Wine Bar, West Village brunch, West Village lunch, Vegetables, Cocktails, West Village">
     <meta name="description" content="Nostalgic Kosovo café and wine bar in the Balkan with seasonal European-American cuisine, classic cocktails, cozy setting, open every day.">
     <meta name="author" content="">
-
 	<!-- Site Icons -->
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-
     <!-- Bootstrap CSS -->
     
 	<!-- Site CSS -->
@@ -26,7 +22,6 @@
     <!-- Responsive CSS -->
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
 <header class="top-navbar">  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

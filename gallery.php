@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Start header -->
 	<?php
 	if(!file_exists('assets/headernav.php') || !file_exists('assets/footer.php')){
@@ -37,32 +37,32 @@
 			<div class="tz-gallery">
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="images/gallery-img-01.jpg">
+						<a class="lightbox" href="gallery-img-01.jpg">
 							<img class="img-fluid" src="images/gallery-img-01.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="images/gallery-img-02.jpg">
+						<a class="lightbox" href="gallery-img-02.jpg">
 							<img class="img-fluid" src="images/gallery-img-02.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="images/gallery-img-03.jpg">
+						<a class="lightbox" href="gallery-img-03.jpg">
 							<img class="img-fluid" src="images/gallery-img-03.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="images/gallery-img-04.jpg">
+						<a class="lightbox" href="gallery-img-04.jpg">
 							<img class="img-fluid" src="images/gallery-img-04.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="images/gallery-img-05.jpg">
+						<a class="lightbox" href="gallery-img-05.jpg">
 							<img class="img-fluid" src="images/gallery-img-05.jpg" alt="Gallery Images">
 						</a>
 					</div> 
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="images/gallery-img-06.jpg">
+						<a class="lightbox" href="gallery-img-06.jpg">
 							<img class="img-fluid" src="images/gallery-img-06.jpg" alt="Gallery Images">
 						</a>
 					</div>
@@ -81,8 +81,8 @@
         <button onclick="makeNormal()">Normal</button>
         <br><br>
         <video id="video1" width="420">
-		  <source src="movie.mp4" type="video/mp4">
-		  <source src="movie.ogg" type="video/ogg">
+		  <source src="images/movie.mp4" type="video/mp4">
+		  <source src="images/movie.ogg" type="video/ogg">
 		  Your browser does not support HTML video.
 		</video>
     </div>
