@@ -2,7 +2,7 @@
 // Database Constants
 define('DBHOST','localhost'); 
 define('DBUSER','root'); 
-define('DBPASS','error404'); 
+define('DBPASS','1957'); 
 define('DBNAME','register'); 
 
 
