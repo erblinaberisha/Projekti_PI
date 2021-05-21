@@ -1,10 +1,33 @@
 <?php include 'controllers/authenticationController.php';
 
+
+class user{
+private $user; 
+
+function __construct($user) {
+    $this->user = $user;
+  }
+  function get_user() {
+    return $this->user;
+  }
+
 // alert popping function  
-function function_alert($message) {
+protected  function function_alert($message) {
     // Display the alert box 
     echo "<script>alert('$message');</script>";
 }
+function __destruct() {
+	echo " ";
+ }
+}
+
+class logedinUser extends user {
+	public function displayAlert($message){
+		$this->function_alert($message); 
+	}
+
+}
+
 
 // verify user with token 
 if(isset($_GET['token'])){
@@ -12,11 +35,13 @@ if(isset($_GET['token'])){
 	verifyUser($token); 
 }
 if( $_SESSION['verified'] ==0) {
-	function_alert("Check your email if you want to verify your account now!"); 
+	$name=$_SESSION['username']; 
+	$username=new logedinUser($name); 
+	$getName=$username->get_user(); 
+
+	$username->displayAlert("Hi, $getName. Check your email if you want to verify your account now!"); 
 }
-else if($_SESSION['verified'] ==1){
-	//function_alert("Your account with the email you entered is verified!"); 
-}
+
 
    // verify user with token 
 if(isset($_GET['password-token'])){
