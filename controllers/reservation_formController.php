@@ -6,11 +6,11 @@ function function_alert($message) {
   // Display the alert box 
   echo "<script>alert('$message');</script>";
 }
+
 $name1_error = $email_error = $phone_error = $date_error= $time_error = $person_error = "";
 $name1 = $email = $phone = $date = $time = $people =  "";
 
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['submit'])) {
 
     if (empty($_POST["date"])) {
         $date_error = "Date is required";
@@ -62,16 +62,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $phone_error = "The phone number should be written like this ***-***-***";
         }
     }
-    
-}
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-  }
+  
 // If user submits the reservation form save values of input fields to database
-if(isset($_POST['submit'])){
 
 define('DATABASE','reservation'); 
 $conn = new mysqli(DBHOST, DBUSER, DBPASS,DATABASE);
@@ -80,30 +72,27 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
   
-// Reale escape string , a way to protect from sql injection 
-  $date = $conn -> real_escape_string($_REQUEST['date']);
-  $time = $conn -> real_escape_string($REQUEST['time']);
-  $people = $conn -> real_escape_string($_REQUEST['people']);
-  $name = $conn -> real_escape_string($_REQUEST['name']);
-  $email =$conn -> real_escape_string($_REQUEST['email']);
-  $phone =$conn -> real_escape_string($_REQUEST['phone']);
 
   $sql = "INSERT INTO reserve  VALUES (reservationNr,'$date', 
-  '$time','$people','$name','$email','$phone')";
+  '$time','$people','$name1','$email','$phone')";
 
 // If query is executed succesfully notify user that reservation has been done 
 if(mysqli_query($conn, $sql)){
   echo '<script type="text/javascript">'; 
   echo 'alert("Your reservation was succesfully made!");'; 
-  echo 'window.location.href = "../reservation.php";';
-  echo '</script>'; } 
-else{
-  echo "DATABASE ERROR: Sorry $sql. " 
-      . mysqli_error($conn);
-}
+  echo 'window.location.href = "reservation.php";';
+  echo '</script>';} 
 
 // Close the connection with database when done
-mysqli_close($conn);}
+mysqli_close($conn);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 ?> 
 
 </body> 

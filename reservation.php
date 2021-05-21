@@ -1,3 +1,6 @@
+<?php include 'controllers/reservation_formController.php'?>
+
+
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
@@ -37,7 +40,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
 					<div class="contact-block">
-						<form id="reservationForm" action="controllers/reservation_formController.php" method="post">
+						<form id="reservationForm" action="reservation.php" method="post">
 							<div class="row">
 								<div class="col-md-6">
 									<h3>Book a table</h3>
@@ -99,8 +102,6 @@
 								<div class="col-md-12">
 									<div class="submit-button text-center">
 										<button class="btn btn-common" id="submit1" name="submit" type="submit">Book Table</button>
-										<div id="msgSubmit" class="h3 text-center hidden"></div> 
-										<div class="clearfix"></div> 
 									</div>
 								</div>
 							</div>            
